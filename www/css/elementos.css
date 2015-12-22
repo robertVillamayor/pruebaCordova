@@ -1,0 +1,39 @@
+/*mis definiciones de estilo*/
+.profesionLista{
+	font-size:12px;
+	margin-top:2px;
+	color:#bbbbbb;
+}
+
+.formularios{
+	margin-right: 4px;
+	margin-left: 4px;
+}
+
+.botonRegistrar{
+	width: 100px;
+	height: 20px;
+	margin: auto;
+}
+
+.boton{
+	width: 80px;
+	height: 20px;
+}
+
+.botonCamara{
+	width: 20px;
+	height: 100px;
+}
+
+.texto{
+	color: red;
+	font-weight: bold;
+	font-family: "Times New Roman", Times, serif;
+	font-style: italic,oblique;
+	font-size: 30px;
+}
+
+
+	
+	

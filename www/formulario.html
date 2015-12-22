@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+
+        <!-- Hoja de estilos / Theme -->
+        <link rel="stylesheet" href="./jquery/pruebas-theme.min.css" />
+        <link rel="stylesheet" href="./jquery/jquery.mobile.icons.min.css" />
+
+        <!--- Hoja de estilos / CSS JQUery Mobile -->
+        <link rel="stylesheet" href="./jquery/jquery.mobile.structure-1.4.5.min.css" />    
+
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <link rel="stylesheet" type="text/css" href="css/elementos.css" />
+
+        <title>CordovaAplicattion</title>
+    </head>
+    
+    <body>
+
+    <div data-role="page">
+        <div data-role="header">
+            <h1>NUEVO REGISTRO</h1>
+          </div>
+
+        <div class="ui-field-contain formularios">
+            <br><br>
+            <img src="./img/images.jpg" width="200px" height="130px" type="file" id="imagenLista">
+            <label for "nombre">Nombre:</label>
+            <input type="text" name="nombre" id="nombre" placeHolder="Nombre :*"> 
+            <label for "apellidos">Apellidos:</label>
+            <input type="text" name="apellidos" id="apellidos" placeHolder="Apellidos :*">
+            <label for "telefono">Telefono:</label>
+            <input type="text" name="telefono" id="telefono" placeHolder="Teléfono :*">
+            <label for "profesion">Profesion:</label>
+            <input type="text" name="profesion" id="profesion" placeHolder="Profesión :*">
+            <label for "correo">Correo:</label>
+            <input type="text" name="correo" id="correo" placeHolder="Correo Electronico :*">
+        </div>
+
+        <div class="ui-field-contain">
+           <a href="listas.html" data-ajax="false" data-role="button" class="botonRegistrar" id="salvar">REGISTRAR</a>
+        </div>
+
+        <br><br>
+        <a href="index.html" data-ajax="false" data-role="button" class="boton" id="boton3">INICIO</a>
+
+    </div>
+
+        <script type="text/javascript" src="./jquery/jquery-1.11.3.min.js"></script>
+        <script type="text/javascript" src="./jquery/jquery.mobile-1.4.5.min.js"></script>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/salvar.js"></script>
+        <script type="text/javascript"></script>
+    
+    </body>
+
+</html>
