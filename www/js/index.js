@@ -88,10 +88,20 @@ var confDB = {
                 "telefono INT(9),"+
                 "profesion VARCHAR(50),"+
                 "correo VARCHAR(50),"+
-                "foto VARCHAR(250));";
+                "foto VARCHAR(250),"+
+                "ultimos INTEGER(1) CHECK (ultimos >=0 and ultimos <=1));"; /*PASO 2 : --> Nuevo campo int con la condicion
+                                                                              de aceptar solo 0 o 1*/
 
         tx.executeSql(sql);
         console.log("BIEN3");
+
+
+
+         /*PASO 2 : --> Actualizamos la tabla para poner ultimos a 1 en los tres ultimos registros*/
+        sql = "UPDATE personas SET ultimos = 1 WHERE id IN (SELECT id from personas ORDER BY id DESC LIMIT 3);";
+        tx.executeSql(sql);
+
+         
 
     },
     createDBError:function(err){
