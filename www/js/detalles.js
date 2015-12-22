@@ -6,9 +6,11 @@ var correo="";
 var foto="";
 var id="";
 var db="";
+var ultimos="";
 
 var inicia = {
 
+	/*PASO 5 : --> DETALLES, añadiendo el campo ultimos*/
 
 	initialize: function(){
 		//generamos el conector
@@ -39,6 +41,7 @@ var inicia = {
 						profesion=fila.profesion;
 						correo=fila.correo;
 						foto=fila.foto;
+						ultimos=fila.ultimos;
 						//aqui actualizaria automaticamente el html
 						console.log("ROW "+i+" nombre: "+fila.nombre);
 						$("#nombre").append(nombre);
@@ -47,6 +50,7 @@ var inicia = {
 						$("#profesion").append(profesion);
 						$("#correo").append(correo);
 						$("#imagen").attr("src",foto);
+						$("#ultimos").append(ultimos);
 					}
 				}
 			},
