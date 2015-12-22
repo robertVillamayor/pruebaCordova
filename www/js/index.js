@@ -95,7 +95,31 @@ var confDB = {
         tx.executeSql(sql);
         console.log("BIEN3");
 
+        /*PASO 3 : --> Insertamos datos en la tabla personas*/
 
+        sql="INSERT INTO personas(nombre,apellidos,telefono,profesion,correo,foto,ultimos)"+
+        "VALUES ('Robert','Villamayor Pastor','689052773','Estudiante','robertpika268@gmail.com','',0);";
+        tx.executeSql(sql);
+
+         sql="INSERT INTO personas(nombre,apellidos,telefono,profesion,correo,foto,ultimos)"+
+        "VALUES ('Pedro','Rodriguez Valbuena','685478512','Estudiante','pedromac@gmail.com','',0);";
+        tx.executeSql(sql);
+
+         sql="INSERT INTO personas(nombre,apellidos,telefono,profesion,correo,foto,ultimos)"+
+        "VALUES ('Juan','Diaz Pasmi','658974256','Estudiante','juanjuan@gmail.com','',0);";
+        tx.executeSql(sql);
+
+         sql="INSERT INTO personas(nombre,apellidos,telefono,profesion,correo,foto,ultimos)"+
+        "VALUES ('Tomas','Perez Gastaldo','678787596','Estudiante','tomasitoperez@gmail.com','',0);";
+        tx.executeSql(sql);
+
+         sql="INSERT INTO personas(nombre,apellidos,telefono,profesion,correo,foto,ultimos)"+
+        "VALUES ('Mireria','Delegido Lorenzo','689052773','Estudiante','ainarita@gmail.com','',0);";
+        tx.executeSql(sql);
+
+         sql="INSERT INTO personas(nombre,apellidos,telefono,profesion,correo,foto,ultimos)"+
+        "VALUES ('Pepito','Ramirez Genis','698584258','Estudiante','pepepepito@gmail.com','',0);";
+        tx.executeSql(sql);
 
          /*PASO 2 : --> Actualizamos la tabla para poner ultimos a 1 en los tres ultimos registros*/
         sql = "UPDATE personas SET ultimos = 1 WHERE id IN (SELECT id from personas ORDER BY id DESC LIMIT 3);";
